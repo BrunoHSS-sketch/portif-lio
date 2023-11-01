@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+* {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+:root {
+  --font-scribe: "Inter", sans-serif;
+  --color-white: white;
+  --color-principal: #ff4444;
+}
+
+body {
+  background-image: url(/assets/background.svg);
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container ul {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container ul img {
+  max-width: 100%;
+  padding: 10px;
+}
+
+.language {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  font-family: var(--font-scribe);
+  font-size: 30px;
+  border: none;
+  color: var(--color-white);
+}
+
+.eng {
+  color: var(--color-principal);
+}
+
+.text {
+  display: block;
+  max-width: 80%;
+  margin-left: 10%;
+  margin-top: 2em;
+  flex-wrap: wrap;
+  color: var(--color-white);
+  font-family: var(--font-scribe);
+  font-weight: 400;
+}
+
+.text .hi span {
+  color: var(--color-principal);
+  font-weight: 400;
+  font-size: 60px;
+  padding-left: 5px;
+}
+.hi {
+  font-size: 40px;
+  font-weight: 200;
+  padding: 10px;
+}
+
+.text h2 {
+  font-family: var(--font-scribe);
+  font-size: 40px;
+  font-weight: 200;
+  padding-left: 18px;
+}
+
+.text h2 span {
+  color: var(--color-principal);
+}
+
+.jr {
+  margin-top: 0.2rem;
+}
+
+.type {
+  position: relative;
+  top: em;
+  font-family: var(--font-scribe);
+  color: var(--color-principal);
+  font-size: 60px;
+  padding-left: 18px;
+}
+
+.type::before {
+  position: absolute;
+  content: "";
+  right: -8px;
+  top: 50%;
+  height: 0.5em;
+  width: 2px;
+  background: var(--color-principal);
+  transform: translateY(-30%);
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+footer {
+  display: flex;
+  flex-wrap: nowrap;
+  text-align: center;
+  font-family: var(--font-scribe);
+  color: black;
+  font-size: 20px;
+  justify-content: center;
+  margin: 4em 20px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .text {
+    margin-left: 15%;
+  }
+
+  .hi {
+    font-size: 60px;
+  }
+
+  .type {
+    font-size: 90px;
+  }
+
+  footer {
+    margin: 4em 10px 0 50%;
+  }
+}
