@@ -16,7 +16,8 @@
 body {
   background-image: url(/assets/background.svg);
   background-repeat: no-repeat;
-  height: 100%;
+  height: 100vh;
+  width: 100vw;
 }
 
 .container {
@@ -34,7 +35,7 @@ body {
 
 .container ul img {
   max-width: 100%;
-  padding: 10px;
+  padding: 5px;
 }
 
 .language {
@@ -147,4 +148,36 @@ footer {
   footer {
     margin: 4em 10px 0 50%;
   }
+}
+
+
+@media screen and (min-width: 1430px) {
+    body{
+      background-size: 100%;
+    }
+
+    .container ul {
+      margin: 20px;
+    }
+
+    .text .hi span {
+      font-size: 90px;
+    }
+    .hi {
+      padding-top: 5rem;
+    }
+    
+
+    .text h2{
+      font-size: 60px;
+    }
+  
+    .type {
+      font-size: 120px;
+    }
+  
+    footer {
+      margin: 4em 10px 0 50%;
+    }
+  
 }
