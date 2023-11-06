@@ -34,8 +34,10 @@ body {
 }
 
 .container ul img {
+  flex-wrap: nowrap;
   max-width: 100%;
-  padding: 5px;
+  margin: 0;
+  padding: 0;
 }
 
 .language {
@@ -60,7 +62,7 @@ button {
   display: block;
   max-width: 80%;
   margin-left: 10%;
-  margin-top: 2em;
+  margin-top: 8em;
   flex-wrap: wrap;
   color: var(--color-white);
   font-family: var(--font-scribe);
@@ -99,7 +101,7 @@ button {
   top: em;
   font-family: var(--font-scribe);
   color: var(--color-principal);
-  font-size: 60px;
+  font-size: 50px;
   padding-left: 18px;
 }
 
@@ -129,10 +131,16 @@ footer {
   color: black;
   font-size: 20px;
   justify-content: center;
-  margin: 4em 20px;
+  margin: 10em 20px;
 }
 
+
+
 @media only screen and (min-width: 1024px) {
+  .container ul img {
+    padding: 10px;
+  }
+  
   .text {
     margin-left: 15%;
   }
